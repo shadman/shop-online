@@ -44,9 +44,10 @@ Update .env file parameter `DATABASE_URL` for created database connection string
 ### Register User
 
 METHOD: POST 
-URL: http://localhost/shop-online/public/api/register
-REQUEST:
 
+URL: http://localhost/shop-online/public/api/register
+
+REQUEST:
 ```
 {
   "email":"demo@app.com",
@@ -60,6 +61,7 @@ REQUEST:
 Login to get access token and to access other API endpoints
 
 METHOD: POST
+
 URL: http://localhost/shop-online/public/api/login
 
 REQUEST:
@@ -82,7 +84,9 @@ RESPONSE:
 Fetch Products list, set 'X-AUTH-TOKEN' in request headers
 
 METHOD: GET 
+
 URL: http://localhost/shop-online/public/api/products
+
 ```
 Header Name: X-AUTH-TOKEN
 Header Value: dbe7a82479ae4aea7f44-1558876797
@@ -90,12 +94,15 @@ Header Value: dbe7a82479ae4aea7f44-1558876797
 
 ### Product List with Pagination
 METHOD: GET
+
 URL: http://localhost/shop-online/public/api/products?page=2&limit=3
 
 
 ### Customer Orders
 METHHOD: GET
+
 URL: http://localhost/shop-online/public/api/customers/orders/summary
+
 RESPONSE:
 ```
 {
@@ -112,7 +119,9 @@ RESPONSE:
 Save customer order details
 
 METHOD: POST
+
 URL: http://localhost/shop-online/public/api/customers/orders
+
 RESPONSE: 
 ```
 {
@@ -135,12 +144,14 @@ RESPONSE:
 ### Get Specific Order
 
 METHOD: GET
+
 URL: http://localhost/shop-online/public/api/customers/orders/1
 
 
 ### Get Customer Order List
 
 METHOD: GET
+
 URL: http://localhost/shop-online/public/api/customers/orders
 
 
@@ -149,6 +160,7 @@ NOTE: apitoken will be mandatory to access endpoints.
 ### Create Product
 
 METHOD: POST
+
 URL: http://localhost/shop-online/public/api/products
 
 RESPONSE:
@@ -164,7 +176,7 @@ RESPONSE:
 "sku": null,
 "status": "Active",
 "imageType": "Link",
-"image": "https://sample-image.com/sample.jpg",
+"image": "https://image.shutterstock.com/image-vector/grunge-red-sample-word-round-260nw-1242668641.jpg",
 "description": null
 }
 ```
@@ -172,6 +184,7 @@ RESPONSE:
 ###  Update Product Detaols
 
 METHOD: PUT
+
 URL: http://localhost/shop-online/public/api/products/19
 
 RESPONSE: 
@@ -187,7 +200,7 @@ RESPONSE:
 "sku": null,
 "status": "Active",
 "imageType": "Link",
-"image": "https://sample-image.com/sample.jpg",
+"image": "https://image.shutterstock.com/image-vector/grunge-red-sample-word-round-260nw-1242668641.jpg",
 "description": null
 }
 ```
@@ -195,11 +208,13 @@ RESPONSE:
 ### Specific Product
 
 METHOD: GET
+
 http://localhost/shop-online/public/api/products/19
 
 ### Delete Specific Product
 
 METHOD: DELETE
+
 URL: http://localhost/shop-online/public/api/products/19
 
 
@@ -208,12 +223,14 @@ URL: http://localhost/shop-online/public/api/products/19
 List all products which dont have bundles so by that we can display to select when creating new bundle
 
 METHOD: GET
+
 URL: http://localhost/shop-online/public/api/products/notbundles
 
 
 ### Add Product Bundle
 
 METHOD: POST
+
 URL: http://localhost/shop-online/public/api/products/bundles
 
 RESPONSE:
@@ -229,7 +246,7 @@ RESPONSE:
 "sku": null,
 "status": "Active",
 "imageType": "Link",
-"image": "https://sample-image.com/sample.jpg",
+"image": "https://image.shutterstock.com/image-vector/grunge-red-sample-word-round-260nw-1242668641.jpg",
 "description": null,
 "productsArr":{"0":23,"1":12}
 }
@@ -238,6 +255,7 @@ RESPONSE:
 ###  Update Product Bundle
 
 METHOD: PUT
+
 URL: http://localhost/shop-online/public/api/products/bundles/25
 
 RESPONSE:
@@ -253,7 +271,7 @@ RESPONSE:
 "sku": null,
 "status": "Active",
 "imageType": "Link",
-"image": "https://sample-image.com/sample.jpg",
+"image": "https://image.shutterstock.com/image-vector/grunge-red-sample-word-round-260nw-1242668641.jpg",
 "description": "Awesome description",
 "productsArr":{"0":3,"1":4}
 }
@@ -262,11 +280,13 @@ RESPONSE:
 ### Get Product Bundle
 
 METHOD: GET
+
 URL: http://localhost/shop-online/public/api/products/bundles/25
 
 ### Delete Product Bundle
 
 METHOD: DELETE
+
 URL: http://localhost/shop-online/public/api/products/bundles/25
 
 
