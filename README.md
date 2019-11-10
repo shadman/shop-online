@@ -164,7 +164,7 @@ RESPONSE:
 "sku": null,
 "status": "Active",
 "imageType": "Link",
-"image": "https://via.placeholder.com/400x300.png",
+"image": "https://sample-image.com/sample.jpg",
 "description": null
 }
 ```
@@ -187,7 +187,7 @@ RESPONSE:
 "sku": null,
 "status": "Active",
 "imageType": "Link",
-"image": "https://via.placeholder.com/400x300.png",
+"image": "https://sample-image.com/sample.jpg",
 "description": null
 }
 ```
@@ -229,7 +229,7 @@ RESPONSE:
 "sku": null,
 "status": "Active",
 "imageType": "Link",
-"image": "https://via.placeholder.com/400x300.png",
+"image": "https://sample-image.com/sample.jpg",
 "description": null,
 "productsArr":{"0":23,"1":12}
 }
@@ -253,7 +253,7 @@ RESPONSE:
 "sku": null,
 "status": "Active",
 "imageType": "Link",
-"image": "https://via.placeholder.com/400x300.png",
+"image": "https://sample-image.com/sample.jpg",
 "description": "Awesome description",
 "productsArr":{"0":3,"1":4}
 }
