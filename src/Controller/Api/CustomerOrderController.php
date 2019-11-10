@@ -19,7 +19,7 @@ class CustomerOrderController extends AbstractFOSRestController
 
     /**
      * Get a product list with total
-     * @Rest\Post("/customers/orders")
+     * @Rest\Post("/customers/orders/summary")
      * @param Request $request
      * 
      * @return Response $response json
@@ -77,7 +77,7 @@ class CustomerOrderController extends AbstractFOSRestController
     }
 
     /**
-     * Retrieves a Orders resource
+     * Retrieves all customers Orders 
      * @Rest\Get("/customers/orders")
      * @param Request $request
      * 
