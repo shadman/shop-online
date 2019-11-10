@@ -79,6 +79,9 @@ RESPONSE:
 }
 ```
 
+#### Note: 
+This token will be required for every API call in headers
+
 ### Products List
 
 Fetch Products list, set 'X-AUTH-TOKEN' in request headers
